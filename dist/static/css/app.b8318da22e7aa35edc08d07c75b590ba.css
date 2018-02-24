@@ -18,8 +18,12 @@ html[data-v-288975d1] {
   top: 35px;
   z-index: 1040;
   cursor: pointer;
-  background-color: rgba(107,138,167,0.7);
+  background-color: rgba(107, 138, 167, 1);
   border-radius: 50%;
+  font-size:20px;
+  text-align:center;
+  line-height:50px;
+  color:#000;
 }
 
 pre[data-v-2ca90776]{
@@ -74,6 +78,10 @@ html[data-v-b76f4cbc] {
   cursor: pointer;
   background-color: rgba(107,138,167,0.7);
   border-radius: 50%;
+  font-size:20px;
+  text-align:center;
+  line-height:50px;
+  color:#000;
 }
 
-/*# sourceMappingURL=app.c64a78830fd81bb0292ec954dabf1dcf.css.map*/
+/*# sourceMappingURL=app.b8318da22e7aa35edc08d07c75b590ba.css.map*/
