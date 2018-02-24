@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="stopEditor" @click.once="stop()"></div>
+    <div class="stopEditor" @click.once="stop()">跳过</div>
     <StyleEditor ref="styleEditor" :code="currentStyle"></StyleEditor>
     <ResumeEditor ref="resumeEditor" :markdown="currentMarkdown" :enableHtml="enableHtml"></ResumeEditor>
   </div>
@@ -198,6 +198,8 @@ html{
 #### 公积金新网厅研发
 > 开发环境：WebStorm、Node、vue、iView
 >
+> 项目URL：http://lvyueyang.gitee.io/wangtingyanshi/mock （账号密码随意输入即可）
+>
 > 项目简介：该项目采用前后端分离技术。前端使用vue-cli搭建，并采用iView作为UI 组件库，其中使用vuex、vue-amap、vue-xlsx-table、axios、sass等技术；后端使用node.js,并采用request、experss、superagent、crypto等模块。
 >
 > 责任描述：前端负责个人版（查询）、单位版（全部）开发；后端负责Node接口转发项目开发；根据综合服务平台接口文档制作并维护jMeter文件；并负责多方项目之间的协作沟通，推进项目进度。
@@ -215,8 +217,8 @@ html{
 ## 自我评价
 - 有严格的执行能力
 - 代码规范良好，注释、文档撰写规范
-- 有较好的沟通协调能力，能促进项目的推进发展
--
+- 有较好的沟通协调能力
+- 接受新事物的能力较强，有良好的抗压能力，有坚定的信心去面对新的任务，发挥自己最大的能力为公司创造更多的效益。
 
 `
       }
@@ -325,5 +327,9 @@ html{
     cursor: pointer;
     background-color: rgba(107,138,167,0.7);
     border-radius: 50%;
+    font-size:20px;
+    text-align:center;
+    line-height:50px;
+    color:#000;
   }
 </style>

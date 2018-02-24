@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="stopEditor" @click.once="stop()"></div>
+    <div class="stopEditor" @click.once="stop()">跳过</div>
     <StyleEditor ref="styleEditor" :code="currentStyle"></StyleEditor>
     <ResumeEditor ref="resumeEditor" :markdown="currentMarkdown" :enableHtml="enableHtml"></ResumeEditor>
   </div>
@@ -19,7 +19,7 @@
     },
     data() {
       return {
-        interval: 30,
+        interval: 20,
         currentStyle: '',
         enableHtml: false,
         fullStyle: [
@@ -198,6 +198,8 @@ html{
 #### 公积金新网厅研发
 > 开发环境：WebStorm、Node、vue、iView
 >
+> 项目URL：http://lvyueyang.gitee.io/wangtingyanshi/mock （账号密码随意输入即可）
+>
 > 项目简介：该项目采用前后端分离技术。前端使用vue-cli搭建，并采用iView作为UI 组件库，其中使用vuex、vue-amap、vue-xlsx-table、axios、sass等技术；后端使用node.js,并采用request、experss、superagent、crypto等模块。
 >
 > 责任描述：前端负责个人版（查询）、单位版（全部）开发；后端负责Node接口转发项目开发；根据综合服务平台接口文档制作并维护jMeter文件；并负责多方项目之间的协作沟通，推进项目进度。
@@ -208,15 +210,17 @@ html{
 > 责任描述：负责后期bug的修复、功能的修改、新需求的开发、现场问题的解决。
 
 #### 其他项目
-  > 贵安微信：公众号主动推送功能（ActiveMQ）、留言功能；管理平台留言处理功能。
+  > 公众号-贵安新区公积金和社保中心：公众号主动推送功能（ActiveMQ）、留言功能；管理平台留言处理功能。
   >
-  > 汕头微信: 公众号主动推送功能、公积金个人贷款查询（六类）功能，数据库Oracle到MySQL迁移
+  > 公众号-汕头市住房公积金管理中心：公众号主动推送功能、公积金个人贷款查询（六类）功能，数据库Oracle到MySQL迁移。
+  >
+  > [贵安新区网站](http://www.gaxqgjj.com/)：网站留言建议、回复功能开发。
 
 ## 自我评价
-- 有严格的执行能力
-- 代码规范良好，注释、文档撰写规范
-- 有较好的沟通协调能力，能促进项目的推进发展
--
+- 勤恳务实，有严格的执行能力
+- 代码规范良好，注释、文档撰写规范0
+- 有较好的沟通协调能力
+- 接受新事物的能力较强，有良好的抗压能力，有坚定的信心去面对新的任务，发挥自己最大的能力为公司创造更多的效益。
 
 `
       }
@@ -270,7 +274,7 @@ html{
       progressivelyShowResume() {
         return new Promise((resolve, reject) => {
           let length = this.fullMarkdown.length;
-          let interval = this.interval;
+          let interval = 5;
           let showResume = () => {
             if (this.currentMarkdown.length < length) {
               this.currentMarkdown = this.fullMarkdown.substring(0, this.currentMarkdown.length + 1);
@@ -319,7 +323,11 @@ html{
     top: 35px;
     z-index: 1040;
     cursor: pointer;
-    background-color: rgba(107,138,167,0.7);
+    background-color: rgba(107, 138, 167, 1);
     border-radius: 50%;
+    font-size:20px;
+    text-align:center;
+    line-height:50px;
+    color:#000;
   }
 </style>
