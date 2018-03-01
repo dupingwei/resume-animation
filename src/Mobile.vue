@@ -196,8 +196,6 @@ html{
 #### 公积金新网厅研发
 > 开发环境：WebStorm、Node、vue、iView
 >
-> 项目URL：http://lvyueyang.gitee.io/wangtingyanshi/mock （账号密码随意输入即可）
->
 > 项目简介：该项目采用前后端分离技术。前端使用vue-cli搭建，并采用iView作为UI 组件库，其中使用vuex、vue-amap、vue-xlsx-table、axios、sass等技术；后端使用node.js,并采用request、experss、superagent、crypto等模块。
 >
 > 责任描述：前端负责个人版（查询）、单位版（全部）开发；后端负责Node接口转发项目开发；根据综合服务平台接口文档制作并维护jMeter文件；并负责多方项目之间的协作沟通，推进项目进度。
